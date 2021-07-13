@@ -1,0 +1,237 @@
+/*geral*/
+body {
+  font-family: Bodoni MT, Didot, serif;
+}
+
+/*header*/
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #52b5ac;
+  padding: 15px 0;
+  z-index: 10;
+}
+.header_menu {
+  text-align: right;
+}
+
+.header_menu ul li {
+  display: inline-block;
+  margin-left: 25px;
+  margin-top: 36px;
+}
+.header_menu ul li a {
+  padding: 10px 0;
+  display: inline-block;
+  margin-left: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 20px;
+  color: #e3631b;
+}
+.header_menu ul li a:hover {
+  color: #ffffff;
+}
+.header_menu ul li a.menu_ativo {
+  color: #ffffff;
+}
+
+/*intro*/
+.intro {
+  width: 100%;
+  height: 240px;
+  background: url("../img/fotos/sobre1.jpg") no-repeat center;
+  background-size: cover;
+  margin-top: 130px;
+  color: #e3631b;
+  padding-top: 70px;
+}
+.intro h1 {
+  font-size: 64px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+}
+
+/*texto sobre a empresa */
+.cor-mvv {
+  height: 260px;
+  width: 100%;
+  background: #e3631b;
+}
+.texto-sobre {
+  color: #ffffff;
+  margin-top: 50px;
+  font-size: 30px;
+  text-align: center;
+}
+
+/*missao, visao e valores*/
+
+.missao {
+  height: 230px;
+  width: 460px;
+  background: #52b5ac;
+  border: 3px solid;
+  border-radius: 7px;
+  border-color: #52b5ac;
+  margin-top: 40px;
+}
+
+.visao {
+  height: 230px;
+  width: 460px;
+  background: #52b5ac;
+  border: 3px solid;
+  border-radius: 7px;
+  border-color: #52b5ac;
+  margin-top: 40px;
+}
+.valores {
+  height: 170px;
+  width: 940px;
+  background: #e3631b;
+  margin-top: 20px;
+  border: 3px solid;
+  border-color: #e3631b;
+  border-radius: 7px;
+}
+.titulo {
+  color: #ffffff;
+  padding-top: 30px;
+  font-size: 40px;
+  text-align: center;
+}
+.texto {
+  color: #ffffff;
+  padding-top: 30px;
+  font-size: 20px;
+  text-align: center;
+}
+
+/*footer*/
+.cor {
+  height: 160px;
+  width: 100%;
+  background: #52b5ac;
+}
+.footer h3 {
+  color: #ffffff;
+  font-size: 40px;
+  height: 120px;
+  width: 500px;
+  text-align: center;
+  margin-top: 20px;
+}
+.footer ul li {
+  display: inline-block;
+  width: 300px;
+  text-align: center;
+  margin-top: -60px;
+}
+
+.footer ul li a {
+  border: 3px solid #e3631b;
+  display: inline-block;
+  padding: 10px;
+}
+
+.footer ul li a:hover {
+  border-color: #fff;
+}
+
+.sobre-fim {
+  width: 100%;
+  height: 240px;
+  background: url("../img/fotos/sobre2.png") no-repeat center;
+  background-size: cover;
+  margin-top: 40px;
+}
+.js[data-anime] {
+  opacity: 0;
+}
+.js .fadeInDown {
+  transform: translate3d(0, -20px, 0);
+}
+.js .anime {
+  opacity: 1;
+  transform: none;
+  transition: opacity 800ms, transform 800ms;
+}
+
+/*Estilo para tablets*/
+@media only screen and (min-width: 788px) and (max-width: 979px) {
+  /*missao, visao e valores*/
+  .missao {
+    height: 220px;
+    width: 300px;
+    margin-top: 40px;
+    margin-left: 30px;
+  }
+
+  .visao {
+    height: 220px;
+    width: 300px;
+    margin-top: 40px;
+    margin-left: 30px;
+  }
+  .valores {
+    width: 684px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+  }
+  .texto {
+    padding-top: 20px;
+  }
+}
+
+/*Estilo para smartphone*/
+@media only screen and (max-width: 787px) {
+  .cor-mvv {
+    height: 220px;
+  }
+  .texto-sobre {
+    margin-top: 50px;
+    font-size: 20px;
+    width: 460px;
+  }
+
+  /*missao, visao e valores*/
+  .missao {
+    height: 200px;
+    width: 400px;
+    margin-top: 20px;
+    margin-left: -50px;
+    position: absolute;
+  }
+
+  .visao {
+    height: 200px;
+    width: 400px;
+    margin-top: 220px;
+    margin-left: -50px;
+    position: absolute;
+  }
+  .valores {
+    height: 200px;
+    width: 400px;
+    margin-top: 440px;
+    margin-left: -50px;
+    margin-bottom: 40px;
+    position: absolute;
+  }
+  .titulo {
+    font-size: 30px;
+  }
+  .texto {
+    font-size: 20px;
+  }
+
+  .sobre-fim {
+    margin-top: 680px;
+  }
+}
